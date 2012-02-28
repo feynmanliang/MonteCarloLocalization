@@ -1,0 +1,15 @@
+# Monte Carlo Localization
+## By Feynman Liang <feynman.liang@gmail.com>
+
+This program was written as a response to Udacity's (www.udacity.com)
+CS 373 course. This program uses monte carlo methods to generate a
+probability distribution of possible locations.
+
+Colors is a matrix where the actual map of the environment is
+stored. Measurements are senses about the current location. Each
+measurement is taken after a movement, designated in tuple pairs of
+number of blocks [down,right] per movement.
+
+sensor\_right adjusts the accuracy of the sensor, affecting the
+reliability of the measurements from the measurements array. p\_move
+adjusts the probability that the robot will move vs stay in current position.
